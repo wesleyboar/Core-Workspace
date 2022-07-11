@@ -7,10 +7,10 @@
     "tup-ui/libs/core-styles"
   ],
   "scripts": {
-    "core-cms:demo:build": "npm run core-cms: npm run build",
-    "core-cms:demo:start": "npm run core-cms: npm run start",
     "core-cms:": "cd core-cms &&",
+    "core-cms:demo": "npm run core-styles: npm run build:css && npm run core-cms: npm run build && echo \"\n    Local URL: http://localhost:8000/ui-patterns/index.html\"",
     "core-styles:": "cd tup-ui/libs/core-styles &&",
+    "core-styles:demo": "npm run core-styles: npm run build:css && npm run core-styles: npm run start",
     "postinstall": "npm run core-cms: npx link ../tup-ui/libs/core-styles"
   },
   "devDependencies": {
