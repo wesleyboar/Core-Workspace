@@ -1,0 +1,19 @@
+{
+  "name": "core-workspace",
+  "version": "0.0.1",
+  "description": "Local development environment to work on Core-CMS and tup-ui simultaneously",
+  "workspaces": [
+    "core-cms",
+    "tup-ui/libs/core-styles"
+  ],
+  "scripts": {
+    "core-cms:demo:build": "npm run core-cms: npm run build",
+    "core-cms:demo:start": "npm run core-cms: npm run start",
+    "core-cms:": "cd core-cms &&",
+    "core-styles:": "cd tup-ui/libs/core-styles &&",
+    "postinstall": "npm run core-cms: npx link ../tup-ui/libs/core-styles"
+  },
+  "devDependencies": {
+    "commander": "^9.3.0"
+  }
+}
