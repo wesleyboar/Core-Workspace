@@ -13,18 +13,32 @@ Workspace for simultaneous development of TACC WMA Workspace Portals & Websites
 
 ## Local Development Setup
 
-1. Install dependencies: `npm ci`.
+1. Install package dependencies, from root, via `npm ci`.
     - You may ignore the error symlinking `core-styles/src/cli.js`.[^1]
-2. Clone/Copy [Core CMS] and [tup-ui (for Core Styles)][Core Styles] into this root directory.
-    - If cloning, follow each package's README instructions.
-3. (Optional) Perform any desired development within a package.
-4. Run any package script from root e.g.:
-    - `npm run core-cms: npm run build`
-    - `npm run core-cms: npm run start`
-    - `npm run core-styles: npm run build`
-    - `npm run core-styles: npm run start`
+2. Clone/Move [Core CMS] and [tup-ui (for Core Styles)][Core Styles] into this root directory.
+    - After cloning, follow each package's README instructions.
+    - Moving an existing repository works just as well.
 
 [^1]: The error "✖ Failed to symlink [...]core-styles with error: [...]" is concerning, but does not affect development. (The [Core Styles] CLI is not used by clients, and might be removed.)
+
+## Using the Packages
+
+Each package:
+
+- shares dependencies (which have been hoisted to root)
+- can load each other as if the other is an NPM package
+
+You may:
+
+- Perform any desired development within a package.
+- Run, from root, a convenience script e.g.:
+  - `npm run core-cms:demo`
+  - `npm run core-styles:demo`
+- Run, from root, a script of any package e.g.:
+  - `npm run core-cms: npm run build:css`
+  - `npm run core-cms: npm run build:demo`
+  - `npm run core-styles: npm run build`
+  - `npm run core-styles: npm run start`
 
 <!-- Link Aliases -->
 
