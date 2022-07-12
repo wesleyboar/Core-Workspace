@@ -32,7 +32,8 @@ You may:
 
 - Perform any desired development within a package.
 - Run, from root, a convenience script e.g.:
-  - `npm run core-cms:demo`
+  - `npm run core-cms:demo --project=core-cms`
+  - `npm run core-cms:demo --project=frontera-cms`
   - `npm run core-styles:demo`
 - Run, from root, a script of any package e.g.:
   - `npm run core-cms: npm run build:css`
