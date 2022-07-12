@@ -41,6 +41,8 @@ You may:
   - `npm run core-styles: npm run build`
   - `npm run core-styles: npm run start`
 
+> __⚠️ Known Issue__: If `npm install (...)` is run _in a package_, then core-styles package is unlinked (which can cause build errors). To restore the link, run `npm ci` _in root_.
+
 <!-- Link Aliases -->
 
 [Core CMS]: https://github.com/TACC/Core-CMS
