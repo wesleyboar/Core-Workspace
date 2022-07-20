@@ -1,1 +1,10 @@
+# Node
 node_modules
+
+# Packages
+Core-CMS
+tup-ui
+
+# OS
+.DS_Store
+Thumbs.db
