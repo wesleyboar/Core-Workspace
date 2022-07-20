@@ -2,7 +2,9 @@
 
 # TACC Core Workspace
 
-Workspace for simultaneous development of TACC WMA Workspace Portals & Websites
+Sample workspace for simultaneous development of TACC WMA Workspace Portals & Websites.
+
+The key provision is merely [`workspaces` in `pacakage.json`](https://github.com/wesleyboar/Core-Workspace/blob/main/package.json#L5) to set up [NPM workspaces]. This template repository just offers guidance and convenience scripts.
 
 ## Related Repositories
 
@@ -28,10 +30,12 @@ Each package:
 
 - shares dependencies (which have been hoisted to root)
 - can load each other as if the other is an NPM package
+- supports development of it independent of sibling packages
 
-You may:
+### (Optional) Convenience Scripts
 
-- Perform any desired development within a package.
+These scripts let you run one or more specific package scripts.
+
 - Run, from root, a convenience script e.g.:
   - `npm run core-cms:demo --project=core-cms`
   - `npm run core-cms:demo --project=frontera-cms`
@@ -54,3 +58,4 @@ You may:
 [Core Portal]: https://github.com/TACC/Core-Portal
 
 [cli-symlink-error]: https://github.com/privatenumber/link/issues/10
+[npm workspaces]: https://docs.npmjs.com/cli/v8/using-npm/workspaces
