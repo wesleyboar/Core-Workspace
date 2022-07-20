@@ -14,12 +14,12 @@ Workspace for simultaneous development of TACC WMA Workspace Portals & Websites
 ## Local Development Setup
 
 1. Install package dependencies, from root, via `npm ci`.
-    - You may ignore the error symlinking `core-styles/src/cli.js`.[^1]
+    - You may ignore [the error symlinking `core-styles/src/cli.js`][cli-symlink-error].[^1]
 2. Clone/Move [Core CMS] and [tup-ui (for Core Styles)][Core Styles] into this root directory.
     - After cloning, follow each package's README instructions.
     - Moving an existing repository works just as well.
 
-[^1]: The error "✖ Failed to symlink [...]core-styles with error: [...]" is concerning, but does not affect development. (The [Core Styles] CLI is not used by clients, and might be removed.)
+[^1]: The error "✖ Failed to symlink [...]core-styles with error: [...]" is concerning, but does not affect development. (The [Core Styles] CLI is not used by clients, and might be removed.) For more information see [privatenumber/link#10][cli-symlink-error].
 
 ## Using the Packages
 
@@ -49,3 +49,4 @@ You may:
 [Core Styles]: https://github.com/TACC/tup-ui/tree/main/libs/core-styles
 [Core Components]: https://github.com/TACC/tup-ui/tree/main/libs/core-components
 [Core Portal]: https://github.com/TACC/Core-Portal
+[cli-symlink-error]: https://github.com/privatenumber/link/issues/10
