@@ -14,7 +14,6 @@ Workspace for simultaneous development of TACC WMA Workspace Portals & Websites
 ## Local Development Setup
 
 1. Install package dependencies, from root, via `npm ci`.
-    - You may ignore the error symlinking `core-styles/src/cli.js`.[^1]
 2. Clone/Move [Core CMS] and [tup-ui (for Core Styles)][Core Styles] into this root directory.
     - After cloning, follow each package's README instructions.
     - Moving an existing repository works just as well.
