@@ -20,10 +20,6 @@ The key provision is merely [`workspaces` in `pacakage.json`](https://github.com
     - After cloning, follow each package's README instructions.
     - Moving an existing repository works just as well.
 
-### Known Issues
-
-1. After `npm ci`, the `postinstall` script results in the error "✖ Failed to symlink [...]core-styles with error: [...]"—it does __not__ affect development (because the [Core Styles] CLI is not used by clients; it may even be removed.) For more information see [privatenumber/link#10][cli-symlink-error].
-
 ## Using the Packages
 
 Each package:
