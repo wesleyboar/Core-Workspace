@@ -3,7 +3,7 @@ node_modules
 
 # Packages
 Core-CMS
-tup-ui
+Core-Styles
 
 # OS
 .DS_Store

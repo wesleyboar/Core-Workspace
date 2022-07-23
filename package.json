@@ -1,17 +1,17 @@
 {
   "name": "core-workspace",
   "version": "0.0.1",
-  "description": "Local development environment to work on Core-CMS and tup-ui simultaneously",
+  "description": "Local development environment to work on Core-CMS and Core-Styles simultaneously",
   "workspaces": [
     "core-cms",
-    "tup-ui/libs/core-styles"
+    "core-styles"
   ],
   "scripts": {
     "core-cms:": "cd core-cms &&",
     "core-cms:demo": "npm run core-styles: npm run build:css --project=$npm_config_project && npm run core-cms: npm run build --project=$npm_config_project && echo \"\n    Local URL: http://localhost:8000/ui-patterns/index.html\"",
-    "core-styles:": "cd tup-ui/libs/core-styles &&",
+    "core-styles:": "cd Core-Styles &&",
     "core-styles:demo": "npm run core-styles: npm run build:css && npm run core-styles: npm run start",
-    "// postinstall": "npm run core-cms: npx link ../tup-ui/libs/core-styles"
+    "// postinstall": "npm run core-cms: npx link ../Core-Styles"
   },
   "devDependencies": {
     "commander": "^9.3.0"
