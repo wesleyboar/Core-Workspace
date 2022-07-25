@@ -11,7 +11,7 @@
     "core-cms:demo": "npm run core-styles: npm run build:css --project=$npm_config_project && npm run core-cms: npm run build --project=$npm_config_project && echo \"\n    Local URL: http://localhost:8000/ui-patterns/index.html\"",
     "core-styles:": "cd Core-Styles &&",
     "core-styles:demo": "npm run core-styles: npm run build:css && npm run core-styles: npm run start",
-    "// postinstall": "npm run core-cms: npx link ../Core-Styles"
+    "postinstall": "npm run core-cms: npx link ../Core-Styles"
   },
   "devDependencies": {
     "commander": "^9.3.0"
