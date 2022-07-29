@@ -15,7 +15,7 @@ The key provision is merely [`workspaces` in `pacakage.json`](https://github.com
 
 ## Local Development Setup
 
-1. Clone/Move [Core CMS] and [tup-ui (for Core Styles)][Core Styles] into this root directory.
+1. Clone/Move [Core CMS] and [Core Styles] into this root directory.
     - After cloning, follow each package's README instructions.
     - Moving an existing repository works just as well.
 2. Install package dependencies, from root, via `npm install`.
@@ -49,7 +49,7 @@ These scripts let you run one or more specific package scripts.
 <!-- Link Aliases -->
 
 [Core CMS]: https://github.com/TACC/Core-CMS
-[Core Styles]: https://github.com/TACC/tup-ui/tree/main/libs/core-styles
+[Core Styles]: https://github.com/TACC/Core-Styles
 [Core Components]: https://github.com/TACC/tup-ui/tree/main/libs/core-components
 [Core Portal]: https://github.com/TACC/Core-Portal
 
