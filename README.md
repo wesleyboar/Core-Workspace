@@ -15,10 +15,10 @@ The key provision is merely [`workspaces` in `pacakage.json`](https://github.com
 
 ## Local Development Setup
 
-1. Install package dependencies, from root, via `npm ci`.
-2. Clone/Move [Core CMS] and [tup-ui (for Core Styles)][Core Styles] into this root directory.
+1. Clone/Move [Core CMS] and [tup-ui (for Core Styles)][Core Styles] into this root directory.
     - After cloning, follow each package's README instructions.
     - Moving an existing repository works just as well.
+2. Install package dependencies, from root, via `npm install`.
 
 ## Using the Packages
 
